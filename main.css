@@ -1,0 +1,109 @@
+html,body{
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* 8.5x11 ratio = 1.29411764706 */
+  width: 800px;
+  height: 1035.29411765px;
+  /* overflow: hidden; */
+}
+body{
+  padding: 0 10px;
+  border: 1px solid #eee;
+}
+@page{
+  size: auto;   /* auto is the initial value */
+  /* this affects the margin in the printer settings */
+  margin: 0;
+}
+@media print{
+  body{
+    border: none;
+  }
+}
+h1{
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+h2{
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h2::after{
+  content: "";
+  /* border-bottom: 1px solid #eee; */
+  width: 80%;
+  height: 1px;
+  background-color: #eee;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  left: auto;
+}
+h3{
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+h3.light{
+  font-weight: 400;
+}
+h3 a{
+  font-weight: inherit;
+  font-size: inherit;
+}
+h4{
+  font-size: 1.2rem;
+}
+p,a,span{
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.row:not(.outer){
+  padding: 20px;
+}
+.row > *{
+  /* margin-bottom: 5px; */
+}
+.t-c{
+  text-align: center;
+}
+.inline{
+  display: inline-block;
+  margin-top: inherit;
+  margin-bottom: inherit;
+  padding-top: 5px;
+}
+.bulleted > *::before{
+  content: '\2022';
+  /* margin-left: 6px; */
+  margin-right: 4px;
+  font-weight: 100;
+}
+.contact{
+  text-align: center;
+}
+.contact > *::after {
+  content: '\2022';
+  margin-left: 6px;
+  margin-right: 4px;
+  /* opacity: 0.5; */
+  font-weight: 100;
+}
+.contact > *:last-child:after {
+  content: "";
+}
+.skillset{
+  /* margin-bottom: 10px; */
+}
