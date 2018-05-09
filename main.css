@@ -33,17 +33,12 @@ h2{
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1px;
+  background-color: #fff;
+  display: inline-block;
 }
 h2::after{
-  content: "";
-  /* border-bottom: 1px solid #eee; */
-  width: 80%;
-  height: 1px;
-  background-color: #eee;
-  position: absolute;
-  top: 20px;
-  right: 0;
-  left: auto;
+  content: "  ";
+  white-space: pre;
 }
 h3{
   font-size: 1rem;
@@ -72,6 +67,13 @@ p{
 a{
   text-decoration: none;
   color: #000;
+}
+hr{
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin-top: 23px;
+  margin-bottom: -23px;
 }
 .row:not(.outer){
   padding: 20px;
