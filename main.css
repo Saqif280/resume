@@ -1,18 +1,21 @@
 html,body{
   font-family: 'Lato', sans-serif;
+  background-color: #333;
   /* font-family: 'Montserrat', sans-serif; */
   /* font-family: 'Montserrat Alternates', sans-serif; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* 8.5x11 ratio = 1.29411764706 */
-  width: 800px;
-  height: 1035.29411765px;
-  /* overflow: hidden; */
 }
-body{
-  padding: 0 10px;
+#resume{
+  background-color: #fff;
+  margin: 40px auto 40px;
+  padding: 10px 20px;
   border: 1px solid #eee;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  /* 8.5x11 ratio = 1.29411764706 */
+  width: 816px;
+  height: 1055px;
+  /* overflow: hidden; */
 }
 @page{
   size: auto;   /* auto is the initial value */
@@ -20,12 +23,15 @@ body{
   margin: 0;
 }
 @media print{
-  body{
+  html, body{
+    background-color: red;
+  }
+  #resume{
     border: none;
+    margin: 0;
   }
 }
 h1{
-  /* margin-top: 40px; */
   font-size: 2.6rem;
   margin-bottom: 10px;
   /* text-transform: uppercase; */
