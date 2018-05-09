@@ -25,8 +25,10 @@ body{
   }
 }
 h1{
-  font-size: 3rem;
+  /* margin-top: 40px; */
+  font-size: 2.6rem;
   margin-bottom: 10px;
+  /* text-transform: uppercase; */
 }
 h2{
   font-size: 1rem;
@@ -64,6 +66,9 @@ p{
   /* margin-top: 0;
   margin-bottom: 0; */
 }
+p.link a{
+  font-weight: 700;
+}
 a{
   text-decoration: none;
   color: #000;
@@ -71,8 +76,8 @@ a{
 hr{
   border: 0;
   height: 1px;
-  background: #ccc;
-  margin-top: 23px;
+  background: #eee;
+  margin-top: 30px;
   margin-bottom: -23px;
 }
 .row:not(.outer){
@@ -98,6 +103,8 @@ hr{
 }
 .contact{
   text-align: center;
+  margin-bottom: -20px;
+  z-index: 2;
 }
 .contact > *::after {
   content: '\2022';
