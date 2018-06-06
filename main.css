@@ -62,7 +62,7 @@ h3 a{
   font-size: inherit;
 }
 p,a,span{
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 400;
   line-height: 18px;
 }
@@ -95,6 +95,9 @@ hr{
 }
 .t-c{
   text-align: center;
+}
+.mb-xs{
+  margin-bottom: 5px;
 }
 .inline{
   display: inline-block;
