@@ -10,11 +10,11 @@ html,body{
 }
 @media print{
   html, body{
-    background-color: red;
+    background-color: red !important;
   }
   #resume{
-    border: none;
-    margin: 0;
+    border: none !important;
+    margin: 0 !important;
   }
 }
 #resume{
