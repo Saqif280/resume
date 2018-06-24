@@ -26,6 +26,7 @@ html,body{
 #one-c h2{
   font-size: 0.6rem;
   text-transform: uppercase;
+  letter-spacing: 0;
 }
 #one-c h3{
   font-size: 0.9rem;
@@ -38,7 +39,7 @@ html,body{
   text-align: justify;
 }
 #one-c #resume{
-  padding: 10px 30px;
+  padding: 10px 40px;
 }
 #resume{
   font-family: 'Lato', sans-serif;
